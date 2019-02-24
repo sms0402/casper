@@ -1,0 +1,21 @@
+# Site settings
+title: BigData Architecture/Ecosystem
+
+email: "sms0402@gmail.com"
+url: "https://sms0402.github.io/"
+github_url: "https://github.com/sms0402"
+github_editurl: ""
+github_profile: https://github.com/sms0402"
+baseurl: "/casper"
+disqus_shortname: 
+
+exclude:
+  - README.md
+  - _site
+  
+highlighter: rouge
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
