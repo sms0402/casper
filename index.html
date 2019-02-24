@@ -1,0 +1,62 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>Introduction</h3>
+      <p>Big Data Architecture/Ecosystem Study.</p>
+    </div>
+    
+    <div class="well-sm">
+      <h3>New Posts</h3>
+      <ul class="post-list">
+	      {% for post in site.posts limit:3 %}
+	      <li>
+	        <h4>
+            <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+	        </h4>
+	        <p><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></p>
+	        {{ post.excerpt }}
+          <hr/>          
+	      </li>
+	      {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  <div class="col-sm-12 col-md-6">
+    <div class="well-sm">
+      <h3>BigData Architecture</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/bigdata/0">0. bigdata?</a></li>
+      </ul>
+    </div>
+    <div class="well-sm">
+      <h3>Hadoop</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/hadoop/0">0. Hadoop?</a></li>
+      </ul>
+    </div>
+    <div class="well-sm">
+      <h3>Kafka</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/kafka/0">0. Kafka?</a></li>
+      </ul>
+    </div>
+
+    <div class="well-sm">
+      <h3>Apach Spark</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/spark/0">0. Apache Spark</a><li>
+      </ul>
+    </div>
+
+    <div class="well-sm">
+      <h3>ELK</h3>
+      <ul>
+        <li><a href="{{ site.baseurl }}/docs/elk/0">0. ELK</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
